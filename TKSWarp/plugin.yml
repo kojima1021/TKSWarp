@@ -1,0 +1,45 @@
+name: TKSWarp
+main: tks967.plugin.warp.TKSWarp
+version: 1.0
+
+commands:
+  setwarp:
+    aliases: sw
+    permission: tkswarp.set
+    permission-message: You don't have premission
+    usage: /<command> <PointName>
+    description: Set Warp Point
+  delwarp:
+    aliases: dw
+    permission: tkswarp.delete
+    permission-message: You don't have premission
+    usage: /<command> <PointName>
+    description: Remove Warp Point
+  warp:
+    permission: tkswarp.warp
+    permission-message: You don't have premission
+    usage: /<command> <PointName> [Player]
+    description: Warp
+  listwarp:
+    aliases: lw
+    permission: tkswarp.list
+    permission-message: You don't have premission
+    usage: /<command>
+    description: Display warp point list
+
+permissions:
+  tkswarp.*:
+    default: op
+    children:
+      tkswarp.set: true
+      tkswarp.delete: true
+      tkswarp.warp: true
+      tkswarp.list: true
+  tkswarp.set:
+    default: op
+  tkswarp.delete:
+    default: op
+  tkswarp.warp:
+    default: op
+  tkswarp.list:
+    default: op
