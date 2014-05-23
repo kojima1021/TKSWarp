@@ -30,7 +30,7 @@ public class SetWarpCommand implements CommandExecutor{
 					return true;
 				}
 			}else {											//入力数がsetwarpを含めないで、1つ以外のとき
-				sender.sendMessage(ChatColor.RED + "/setwarp <Poitn>");	//CommandSenderにメッセージを送る(色付き)
+				sender.sendMessage(ChatColor.RED + "/setwarp <Point>");	//CommandSenderにメッセージを送る(色付き)
 				return true;
 			}
 		}
